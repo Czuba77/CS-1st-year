@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\podklasy_zwierzat">
+      <UniqueIdentifier>{c3b25e33-b485-4066-971e-8dac9e0ca579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\podklasy_zwierzat">
+      <UniqueIdentifier>{332e232f-3016-4ae2-a976-4bb494a47886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\podklasy_roslin">
+      <UniqueIdentifier>{3320d540-c592-4e43-9a65-76398d4f8c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\podklasy_roslin">
+      <UniqueIdentifier>{adc740b1-7e9f-49c0-a369-ddb0030111d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProjektPO1.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Swiat.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Organizm.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Roslina.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="owca.cpp">
+      <Filter>Pliki źródłowe\podklasy_zwierzat</Filter>
+    </ClCompile>
+    <ClCompile Include="wilk.cpp">
+      <Filter>Pliki źródłowe\podklasy_zwierzat</Filter>
+    </ClCompile>
+    <ClCompile Include="Zwierze.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="lis.cpp">
+      <Filter>Pliki źródłowe\podklasy_zwierzat</Filter>
+    </ClCompile>
+    <ClCompile Include="antylopa.cpp">
+      <Filter>Pliki źródłowe\podklasy_zwierzat</Filter>
+    </ClCompile>
+    <ClCompile Include="zolw.cpp">
+      <Filter>Pliki źródłowe\podklasy_zwierzat</Filter>
+    </ClCompile>
+    <ClCompile Include="czlowiek.cpp">
+      <Filter>Pliki źródłowe\podklasy_zwierzat</Filter>
+    </ClCompile>
+    <ClCompile Include="guarana.cpp">
+      <Filter>Pliki źródłowe\podklasy_roslin</Filter>
+    </ClCompile>
+    <ClCompile Include="mlecz.cpp">
+      <Filter>Pliki źródłowe\podklasy_roslin</Filter>
+    </ClCompile>
+    <ClCompile Include="barszcz_sosnowskiego.cpp">
+      <Filter>Pliki źródłowe\podklasy_roslin</Filter>
+    </ClCompile>
+    <ClCompile Include="trawa.cpp">
+      <Filter>Pliki źródłowe\podklasy_roslin</Filter>
+    </ClCompile>
+    <ClCompile Include="wilcze_jagody.cpp">
+      <Filter>Pliki źródłowe\podklasy_roslin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Swiat.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Organizm.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Zwierze.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Roslina.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="owca.h">
+      <Filter>Pliki nagłówkowe\podklasy_zwierzat</Filter>
+    </ClInclude>
+    <ClInclude Include="wilk.h">
+      <Filter>Pliki nagłówkowe\podklasy_zwierzat</Filter>
+    </ClInclude>
+    <ClInclude Include="lis.h">
+      <Filter>Pliki nagłówkowe\podklasy_zwierzat</Filter>
+    </ClInclude>
+    <ClInclude Include="zolw.h">
+      <Filter>Pliki nagłówkowe\podklasy_zwierzat</Filter>
+    </ClInclude>
+    <ClInclude Include="antylopa.h">
+      <Filter>Pliki nagłówkowe\podklasy_zwierzat</Filter>
+    </ClInclude>
+    <ClInclude Include="czlowiek.h">
+      <Filter>Pliki nagłówkowe\podklasy_zwierzat</Filter>
+    </ClInclude>
+    <ClInclude Include="barszcz_sosnowskiego.h">
+      <Filter>Pliki nagłówkowe\podklasy_roslin</Filter>
+    </ClInclude>
+    <ClInclude Include="guarana.h">
+      <Filter>Pliki nagłówkowe\podklasy_roslin</Filter>
+    </ClInclude>
+    <ClInclude Include="mlecz.h">
+      <Filter>Pliki nagłówkowe\podklasy_roslin</Filter>
+    </ClInclude>
+    <ClInclude Include="trawa.h">
+      <Filter>Pliki nagłówkowe\podklasy_roslin</Filter>
+    </ClInclude>
+    <ClInclude Include="wilcze_jagody.h">
+      <Filter>Pliki nagłówkowe\podklasy_roslin</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
