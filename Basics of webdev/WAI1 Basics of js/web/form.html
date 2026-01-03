@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<title>Filmy</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styleForm.css" />
+	<link rel="stylesheet" href="Jquery-UI/jquery-ui.min.css" />
+	<link rel="stylesheet" href="Jquery-UI/jquery-ui.structure.min.css" />
+	<link rel="stylesheet" href="Jquery-UI/jquery-ui.theme.min.css" />
+	<link rel="stylesheet" href="plug/ch/chosen.min.css"/>
+	<style>
+		@font-face {
+			font-family: "Ubuntu";
+			src: url("font/Ubuntu-Regular.ttf") format("truetype");
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>Dołącz do nas!</h1>
+	</header>
+
+	<div id="container">
+
+		<nav>
+			<ol>
+
+				<li>
+					<a href="index.html">Strona główna</a>
+				</li>
+
+				<li>
+					<a href="Rezyserzy.html">Reżyserzy</a>
+					<ul>
+						<li>
+							<a href="quiz.html">Quiz</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="Filmy.html">Najlepsze filmy 2023</a>
+					<ul>
+						<li>
+							<a href="Ranking.html">Ranking filmów</a>
+						</li>
+						<li>
+							<a href="FilmyGal.html">Galeria zdjęć</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="form.html">Dołącz do klubu filmu!</a>
+				</li>
+			</ol>
+		</nav>
+
+		<article>
+			<h2>Formularz rejestracyjny</h2>
+			<form action="odbierz.php" method="post">
+				<label for="imie">Podaj imię</label>
+				<input type="text" id="imie" name="imie" />
+				<br />
+				<label for="nazwisko">Podaj nazwisko</label>
+				<input type="text" id="nazwisko" name="nazwisko" />
+				<br />
+				<label for="Pseud">Podaj pseudonim pod jakim chcesz byc widoczny na stronie</label>
+				<input type="text" id="Pseud" name="nick" />
+				<br />
+				<label for="haslo">Wybierz hasło</label>
+				<input type="password"  id="haslo" name="haslo"/>
+				<br />
+				
+				
+				Wybierz płeć:<br/>
+				<div id="radioplec">
+				<label for="mal">Mężczyzna</label>
+				<input type="radio" id="mal" name="plec" value="male"/>
+				<label for="fem">Kobieta</label>
+				<input type="radio" id="fem" name="plec" value="female" />
+				</div>
+				<br/>
+				
+				<label for="dataur">Podaj date urodzenia</label>
+				<input type="date" id="dataur" name="dataUrodzenia" />
+				<br />
+				<label for="listagatunkow">Podaj ulubiony gatunek filmowy</label>
+				<select name="gatunki" id="listagatunkow">
+					<option value=" "> ... </option>
+					<option value="komedie">Komedie</option>
+					<option value="Horrory">Horrory</option>
+					<option value="Filmy_akcji">Filmy akcji</option>
+				</select>
+				<br />
+				<textarea rows="6" cols="40" placeholder="Jeśli masz uwagi wpisz je tutaj." name="uwagi"></textarea>
+				<br />
+				
+				<input type="submit" value="Prześlij"/>
+				
+				<input type="reset" id="reset"/>
+
+			</form>
+
+	
+		</article>
+
+		</div>
+
+		<footer>
+		</footer>
+		
+		<script src="jquery-3.7.1.min.js" ></script>
+		<script src="Jquery-UI/jquery-ui.min.js" ></script>
+		<script src="plug/ch/chosen.jquery.min.js" ></script>
+		<script>
+			$("#listagatunkow").chosen();
+		
+			$("#radioplec").buttonset();
+		</script>
+
+
+</body>
+	
+	
+
+</html>

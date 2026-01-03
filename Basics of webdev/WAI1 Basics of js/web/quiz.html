@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<title>Filmy</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="Jquery-UI/jquery-ui.min.css" />
+	<link rel="stylesheet" href="Jquery-UI/jquery-ui.structure.min.css" />
+	<link rel="stylesheet" href="Jquery-UI/jquery-ui.theme.min.css" />
+
+
+
+	<style>
+		@font-face {
+			font-family: "Ubuntu";
+			src: url("font/Ubuntu-Regular.ttf") format("truetype");
+		}
+	</style>
+
+	<link rel="stylesheet" href="plug/ch/chosen.min.css"/>
+</head>
+
+
+
+<body>
+
+	<header>
+		<h1 id="title">Quiz</h1>
+
+	</header>
+
+
+	<div id="container">
+
+		<nav>
+			<ol>
+
+				<li>
+					<a href="index.html">Strona główna</a>
+				</li>
+
+				<li>
+					<a href="Rezyserzy.html">Reżyserzy</a>
+					<ul>
+						<li>
+							<a href="quiz.html">Quiz</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="Filmy.html">Najlepsze filmy 2023</a>
+					<ul>
+						<li>
+							<a href="Ranking.html">Ranking filmów</a>
+						</li>
+						<li>
+							<a href="FilmyGal.html">Galeria zdjęć</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="form.html">Dołącz do klubu filmu!</a>
+				</li>
+			</ol>
+		</nav>
+
+		<div style="clear:both;"></div>
+
+		<form id="quiz">
+			1. Jaki film nakręcił Quentin Tarantino?<br />
+			<input type="radio" name="p1" />Incepcja<br />
+			<input type="radio" name="p1" id="T1" />Wściekłe psy<br />
+			<input type="radio" name="p1" />Ostatni samuraj<br />
+			<input type="radio" name="p1" />Wredne dziewczyny<br />
+			<br />
+			2. Na podstawie jakiej ksiązki jakiego autora powstał film "American Psycho"?<br />
+			<input type="radio" name="p2" />George R. R. Martin<br />
+			<input type="radio" name="p2" />Terry Pratchett<br />
+			<input type="radio" name="p2" id="T2" />Bret Easton Ellis<br />
+			<input type="radio" name="p2" />Jane Austen<br />
+			<br />
+			3.  Ile Złotych globów dostał Martin Scorsese?<br />
+			<input type="radio" name="p3" id="T3" />3<br />
+			<input type="radio" name="p3" />2 <br />
+			<input type="radio" name="p3" />0<br />
+			<input type="radio" name="p3" />5<br />
+			<br />
+
+			
+			<button type="reset" name="przycisk" value="Prześlij odpowiedzi" onclick="result()" id="przycisk">Prześlij odpowiedzi</button>
+			
+			<div id="divdofunc">
+			
+			</div>
+
+
+		</form>
+		</div>
+		<footer>
+		</footer>
+
+	<script src="jquery-3.7.1.min.js"></script>
+	<script src="Jquery-UI/jquery-ui.min.js"></script>
+	<script src="plug/ch/chosen.jquery.min.js"></script>
+	<script>
+
+
+		$("#przycisk").button({
+			icon: "ui-icon-check",
+			showLabel: true
+		});
+		
+
+
+		function result() {
+			document.getElementById("divdofunc").innerHTML = "";
+			var wynik = 0;
+			if (document.getElementById('T1').checked) {
+				wynik++;
+			}
+			if (document.getElementById('T2').checked) {
+				wynik++;
+			}
+			if (document.getElementById('T3').checked) {
+				wynik++;
+			}
+			if (wynik == 3) {
+				document.getElementById("title").innerHTML = "Gratulacje!"
+			}
+			else {
+				document.getElementById("title").innerHTML = "Następnym razem pójdzie Ci lepiej!"
+			}
+			const wpisanynapis1 = document.createElement("div");
+			const napis1 = document.createTextNode("Twój wynik to:" + wynik + "/3" + "\n");
+			if (localStorage.getItem("wyniki")) {
+				const napis2 = document.createTextNode(localStorage.getItem("wyniki"));
+				wpisanynapis1.appendChild(napis1);
+				wpisanynapis1.appendChild(napis2);
+				const strona = document.getElementById("divdofunc");
+				strona.insertAdjacentElement("beforeend", wpisanynapis1);
+				localStorage.setItem('wyniki', "Twoj ostatni wyniki to: " + wynik + "/3");
+				return;
+			}
+			else {
+				wpisanynapis1.appendChild(napis1);
+				const strona = document.getElementById("divdofunc");
+				strona.insertAdjacentElement("beforeend", wpisanynapis1);
+
+
+				localStorage.setItem('wyniki', "Twoj ostatni wyniki to: " + wynik + "/3");
+				return;
+			}
+		}
+	</script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,136 @@
+html, body {
+    background-color: white;
+    color: darkslategray;
+    width: 100%;
+    font-family: Ubuntu;
+    margin: 0 !important;
+}
+
+header{
+    width:1000px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:24px;
+    background-color:white;
+}
+
+#container{
+    width:1036px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color:#ffff94;
+
+}
+
+nav {
+    width: 1000px;
+    text-align: center;
+    background-color: #AEAE00;
+    height: 30px;
+    padding: 18px;
+}
+
+ol>li>a{
+    color:darkslategray;
+    text-decoration:none;
+    display:block;
+    font-size:16px;
+    padding:0 5px;
+}
+
+ol > li > ul > li >a {
+    color: darkslategray;
+    text-decoration: none;
+    display: block;
+}
+
+ol > li {
+    float: left;
+    width: 246px;
+    border-right: 1px solid #484848;
+    border-left: 1px solid #484848;
+}
+
+ol{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+}
+
+
+ol>li>ul{
+    display:none;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    position:fixed;
+    width:246px;
+}
+
+ol > li:hover {
+    background-color:plum;
+}
+
+
+ol > li:hover > ul {
+    display: block;
+}
+
+
+ol>li>ul>li>a{
+    background-color:thistle;
+    border-top: 1px solid black;
+
+                    
+}
+
+ol>li>ul>li>a:hover{
+    background-color:lavender;
+}
+
+
+article{
+    border-bottom:dashed 1px darkslategray;
+    padding:15px;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+p{
+
+    text-align:center;
+}
+
+#link {
+    text-align: center;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#link > a {
+     padding: 15px;
+     text-decoration: none;
+     color:darkslategray;
+     border:1px dotted darkslategray;
+ }
+
+footer {
+    background-color: darkslategray;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer>a{
+    color:white;
+    text-decoration:none;
+}
